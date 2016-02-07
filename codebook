@@ -1,0 +1,19 @@
+This file summarized the various variables used in the analysis.
+
+Main data:
+subject - The ID of the test subject
+activity - The type of activity (walking, sitting, standing, laying, walking upstairs and walking downstairs) that was being performed when the corresponding measurements were taken
+
+Variables used:
+readzipfile1: reads data from the file activity_labels.txt
+readzipfile2: reads data from the file features.txt
+readzipfile2value: extracts data related to mean and standard deviation
+loaddata1: reads data from the file X_train.txt and then applies cbind including itself and on the next 2 variables
+  loaddata1value: reads data from the file Y_train.txt
+  loaddata1value2: reads data from the file subject_train.txt
+check: reads data from the file X_train.txt and then applies cbind including itself and on the next 2 variables
+  checkactivities: reads data from the file Y_test.txt
+  checksubjects: reads data from the file subject_test.txt
+combined: applies rbind on variables: check and loaddata1
+
+  
